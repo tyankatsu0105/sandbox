@@ -1,0 +1,41 @@
+dependencies:
+  '@rush-temp/my-controls': 'file:projects/my-controls.tgz'
+  '@rush-temp/my-toolchain': 'file:projects/my-toolchain.tgz'
+lockfileVersion: 5.1
+packages:
+  /typescript/3.9.3:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+  /typescript/4.0.2:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
+  'file:projects/my-controls.tgz':
+    dependencies:
+      typescript: 4.0.2
+    dev: false
+    name: '@rush-temp/my-controls'
+    resolution:
+      integrity: sha512-+Gq3O4nh88oygdn2GLYRg6MrA1bZy6AsVlRlzWE2FYexdaGxrWEKBoAWktofZM+lWFpD/Xcm050O7NLMt1IpTQ==
+      tarball: 'file:projects/my-controls.tgz'
+    version: 0.0.0
+  'file:projects/my-toolchain.tgz':
+    dependencies:
+      typescript: 3.9.3
+    dev: false
+    name: '@rush-temp/my-toolchain'
+    resolution:
+      integrity: sha512-NgVkoYwrhTc8S55wBk0bP9Mn1p3+yTerr+7CSu1299z94dS25x9OLB1RJdfKPmzGFV67FeUKqIrNdYkH4MmhRg==
+      tarball: 'file:projects/my-toolchain.tgz'
+    version: 0.0.0
+registry: ''
+specifiers:
+  '@rush-temp/my-controls': 'file:./projects/my-controls.tgz'
+  '@rush-temp/my-toolchain': 'file:./projects/my-toolchain.tgz'

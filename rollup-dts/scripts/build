@@ -1,0 +1,12 @@
+cd rollup
+cp -r ../src/. src
+npm run build
+
+cd ../rollup-plugin-dts
+cp -r ../src/. src
+npm run build
+
+cd ../api-extractor
+cp -r ../src/. src
+npm run build
+

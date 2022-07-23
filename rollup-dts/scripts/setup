@@ -1,0 +1,12 @@
+cd rollup
+npx rimraf node_modules
+npm install
+
+cd ../rollup-plugin-dts
+npx rimraf node_modules
+npm install
+
+
+cd ../api-extractor
+npx rimraf node_modules
+npm install

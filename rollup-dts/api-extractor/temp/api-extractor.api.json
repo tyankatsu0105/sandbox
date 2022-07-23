@@ -1,0 +1,2267 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.9.11",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "api-extractor!",
+  "docComment": "",
+  "name": "api-extractor",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "api-extractor!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn1:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn1: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn1",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn10:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn10: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn10",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn100:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn100: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn100",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn11:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn11: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn11",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn12:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn12: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn12",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn13:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn13: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn13",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn14:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn14: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn14",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn15:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn15: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn15",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn16:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn16: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn16",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn17:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn17: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn17",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn18:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn18: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn18",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn19:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn19: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn19",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn2:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn2: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn2",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn20:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn20: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn20",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn21:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn21: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn21",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn22:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn22: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn22",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn23:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn23: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn23",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn24:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn24: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn24",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn25:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn25: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn25",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn26:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn26: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn26",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn27:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn27: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn27",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn28:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn28: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn28",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn29:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn29: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn29",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn3:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn3: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn3",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn30:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn30: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn30",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn31:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn31: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn31",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn32:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn32: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn32",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn33:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn33: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn33",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn34:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn34: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn34",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn35:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn35: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn35",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn36:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn36: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn36",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn37:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn37: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn37",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn38:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn38: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn38",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn39:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn39: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn39",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn4:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn4: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn4",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn40:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn40: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn40",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn41:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn41: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn41",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn42:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn42: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn42",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn43:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn43: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn43",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn44:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn44: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn44",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn45:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn45: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn45",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn46:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn46: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn46",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn47:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn47: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn47",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn48:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn48: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn48",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn49:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn49: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn49",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn5:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn5: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn5",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn50:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn50: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn50",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn51:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn51: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn51",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn52:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn52: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn52",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn53:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn53: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn53",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn54:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn54: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn54",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn55:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn55: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn55",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn56:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn56: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn56",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn57:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn57: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn57",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn58:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn58: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn58",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn59:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn59: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn59",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn6:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn6: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn6",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn60:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn60: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn60",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn61:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn61: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn61",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn62:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn62: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn62",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn63:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn63: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn63",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn64:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn64: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn64",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn65:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn65: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn65",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn66:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn66: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn66",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn67:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn67: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn67",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn68:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn68: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn68",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn69:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn69: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn69",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn7:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn7: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn7",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn70:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn70: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn70",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn71:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn71: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn71",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn72:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn72: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn72",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn73:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn73: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn73",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn74:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn74: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn74",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn75:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn75: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn75",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn76:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn76: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn76",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn77:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn77: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn77",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn78:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn78: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn78",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn79:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn79: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn79",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn8:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn8: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn8",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn80:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn80: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn80",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn81:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn81: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn81",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn82:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn82: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn82",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn83:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn83: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn83",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn84:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn84: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn84",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn85:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn85: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn85",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn86:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn86: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn86",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn87:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn87: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn87",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn88:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn88: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn88",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn89:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn89: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn89",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn9:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn9: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn9",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn90:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn90: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn90",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn91:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn91: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn91",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn92:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn92: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn92",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn93:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn93: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn93",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn94:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn94: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn94",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn95:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn95: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn95",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn96:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn96: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn96",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn97:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn97: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn97",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn98:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn98: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn98",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!fn99:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "fn99: "
+            },
+            {
+              "kind": "Content",
+              "text": "(a: string) => string"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "fn99",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "api-extractor!IUser:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IUser "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IUser",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "api-extractor!IUser#greet:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "greet: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(name: string) => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "greet",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "api-extractor!NAME:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "NAME = \"tyankatsu\""
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "NAME",
+          "variableTypeTokenRange": {
+            "startIndex": 0,
+            "endIndex": 0
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "api-extractor!User:class",
+          "docComment": "/**\n * This is some example documentation.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class User implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "IUser",
+              "canonicalReference": "api-extractor!IUser:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "User",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "api-extractor!User:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `User` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(name: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "name",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "api-extractor!User#greet:member(1)",
+              "docComment": "/**\n * Print log that greeting message\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "greet(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "greet"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

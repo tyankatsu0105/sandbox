@@ -1,0 +1,15 @@
+{
+  "name": "@tyankatsu0105/my-controls",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "4.0.2"
+  }
+}

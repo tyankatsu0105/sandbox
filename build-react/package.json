@@ -1,0 +1,31 @@
+{
+  "name": "sandbox-origin-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier-watch": "onchange '**/*.js' '**/*.md' -- prettier --write {{changed}}",
+    "serve": "browser-sync start --server src --serveStatic src --files src",
+    "dev": "run-p serve prettier-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/sandbox-origin-react.git"
+  },
+  "keywords": [],
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/sandbox-origin-react/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/sandbox-origin-react#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "browser-sync": "^2.26.7",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.1.0",
+    "prettier": "^1.19.1"
+  }
+}

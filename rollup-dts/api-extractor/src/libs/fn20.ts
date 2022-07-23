@@ -1,0 +1,1 @@
+export const fn20 = (a: string) => a

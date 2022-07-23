@@ -1,0 +1,25 @@
+{
+  "name": "sandbox-postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/sandbox-postcss.git"
+  },
+  "keywords": [],
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/sandbox-postcss/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/sandbox-postcss#readme",
+  "devDependencies": {
+    "postcss": "^7.0.26",
+    "postcss-cli": "^7.1.0",
+    "postcss-preset-env": "^6.7.0"
+  }
+}

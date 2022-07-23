@@ -1,0 +1,33 @@
+{
+  "name": "sandbox-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel src -d dist --watch",
+    "check": "webpack",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/sandbox-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/sandbox-webpack/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/sandbox-webpack#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "loader-utils": "^1.2.3",
+    "schema-utils": "^2.6.4"
+  }
+}

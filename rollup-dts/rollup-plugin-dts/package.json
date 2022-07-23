@@ -1,0 +1,27 @@
+{
+  "name": "rollup-plugin-dts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "tyankatsu",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "run-s clean:declaration-dist",
+    "build": "run-s declaration-build rollup",
+    "postbuild": "run-s clean:declaration",
+    "declaration-build": "tsc -p tsconfig.declaration.json",
+    "rollup": "rollup -c",
+    "clean:declaration-dist": "rimraf dist declaration",
+    "clean:declaration": "rimraf declaration"
+  },
+  "devDependencies": {
+    "rollup": "^2.26.8",
+    "rollup-plugin-dts": "^1.4.12",
+    "rollup-plugin-typescript2": "^0.27.2",
+    "@types/node": "^14.6.2",
+    "typescript": "^4.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}

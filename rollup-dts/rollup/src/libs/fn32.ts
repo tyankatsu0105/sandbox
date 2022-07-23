@@ -1,0 +1,1 @@
+export const fn32 = (a: string) => a

@@ -1,0 +1,16 @@
+:root{
+  --main-bg-color: brown;
+}
+
+p {
+  color: blue;
+  background-color: var(--main-bg-color);
+
+  & span{
+    color: red;
+  }
+}
+
+a{
+  all: initial;
+}

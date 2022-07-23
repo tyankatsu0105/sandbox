@@ -1,0 +1,10 @@
+
+> sandbox-babel@1.0.0 test /Users/tyankatsu/project/sandbox-babel
+> jest
+
+  console.log lib/plugin.js:19
+    __DEV__
+
+  console.log lib/plugin.js:19
+    __hogehoge__
+
