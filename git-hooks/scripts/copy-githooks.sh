@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd `dirname $0`
+
+GIT_HOOKS_DIRECTORY='../.githooks/'
+ORIGINAL_GIT_HOOKS_DIRECTORY='../.git/hooks/'
+
+cp -f -r $GIT_HOOKS_DIRECTORY $ORIGINAL_GIT_HOOKS_DIRECTORY
+chmod -R +x $ORIGINAL_GIT_HOOKS_DIRECTORY

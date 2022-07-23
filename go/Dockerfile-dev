@@ -1,0 +1,15 @@
+FROM golang:1.16-alpine
+RUN apk upgrade --update && \
+    apk --no-cache add git
+
+# -----------------------
+# ARG
+ARG WORKDIR
+# -----------------------
+WORKDIR $WORKDIR
+COPY . .
+
+RUN go get github.com/cosmtrek/air
+
+CMD ["air", "-c", ".air.toml"]
+

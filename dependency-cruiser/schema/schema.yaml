@@ -1,0 +1,46 @@
+openapi: "3.0.0"
+info:
+  title: Sample Schema
+  description: Sample Schema
+  version: "1.0"
+paths:
+  /user:
+    get:
+      description: ログインユーザ情報
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserResponse"
+
+components:
+  schemas:
+    User:
+      required:
+        - name
+        - avatar
+        - id
+        - email
+      type: object
+      properties:
+        name:
+          type: string
+          description: ユーザ名
+        avatar:
+          type: string
+          description: アバター画像パス
+        id:
+          type: string
+          description: user id
+        email:
+          type: string
+          description: メールアドレス
+    UserResponse:
+      required:
+        - user
+      type: object
+      properties:
+        user:
+          $ref: "#/components/schemas/User"

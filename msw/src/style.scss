@@ -1,0 +1,26 @@
+:root {
+  // =======================
+  // color
+  // =======================
+  --main-bg-color: #eceff1;
+  --main-font-color: #263238;
+  --main-border-color: #263238;
+
+  // =======================
+  // font
+  // =======================
+  --base-letter-spacing: 0.1rem;
+
+  // =======================
+  // space
+  // =======================
+  --base-space: 4px;
+  --main-container-horizontal-padding: calc(var(--base-space) * 3);
+}
+
+body {
+  font-size: var(--main-font-size);
+  color: var(--main-font-color);
+  letter-spacing: var(--base-letter-spacing);
+  background-color: var(--main-bg-color);
+}

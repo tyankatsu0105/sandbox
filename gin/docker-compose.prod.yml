@@ -1,0 +1,37 @@
+version: "3"
+services:
+  app:
+    container_name: sandbox-gin-app
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      args:
+        APP_NAME: $APP_NAME
+        WORKDIR: $WORKDIR
+        PORT: $APP_PORT
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    depends_on:
+      - db
+    volumes:
+      - .:${WORKDIR}
+
+  db:
+    container_name: sandbox-gin-db
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - PGDATA
+    volumes:
+      - "./data/db:/var/lib/postgresql/data"
+      - ./data/db/init:/docker-entrypoint-initdb.d
+
+  adminer:
+    container_name: sandbox-gin-adminer
+    image: adminer:4.7
+    restart: always
+    ports:
+      - 8080:8080

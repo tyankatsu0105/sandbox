@@ -1,0 +1,41 @@
+#!/bin/sh
+
+function my_error() {
+  echo ""
+  echo "🤦 Oops... There is an error..."
+  echo ""
+  exit 1
+}
+
+FILES=$(git diff --name-only HEAD)
+ROOT=$(git rev-parse --show-toplevel)
+
+IS_CHACKED_LIBS_UTILS=false
+IS_CHACKED_APPS_CLIENT=false
+
+for file in $FILES; do
+  cd $ROOT
+
+  case "$file" in
+  libs/utils/*)
+    if $IS_CHACKED_LIBS_UTILS; then continue 
+    fi
+    IS_CHACKED_LIBS_UTILS=true
+
+    cd libs/utils
+    npm run git-hooks:pre-commit || my_error
+    ;;
+
+  apps/client/*)
+    if $IS_CHACKED_APPS_CLIENT; then continue 
+    fi
+    IS_CHACKED_APPS_CLIENT=true
+
+    cd apps/client
+    npm run git-hooks:pre-commit || my_error
+    ;;
+
+  *)
+    ;;
+  esac
+done
