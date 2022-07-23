@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "lib": ["es2019", "dom", "dom.iterable"],
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2019",
+    "module": "esnext",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "~client/*": ["apps/client/src/*"],
+      "@sandbox-react-apollo/components": ["libs/components/src/index.ts"],
+      "@sandbox-react-apollo/hooks": ["libs/hooks/src/index.ts"],
+      "@sandbox-react-apollo/helpers": ["libs/helpers/src/index.ts"]
+    },
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "exclude": ["node_modules", "tmp"],
+  "esModuleInterop": true
+}

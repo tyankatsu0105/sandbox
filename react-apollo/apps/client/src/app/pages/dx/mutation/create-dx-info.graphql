@@ -1,0 +1,5 @@
+mutation CreateDxInfo ($input: PageInput!) {
+  updatePage(input: $input) @client {
+    heading
+  }
+}

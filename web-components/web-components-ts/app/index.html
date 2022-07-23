@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <time-formatted datetime="2019-12-01"
+  year="numeric" month="long" day="numeric"
+  hour="numeric" minute="numeric" second="numeric"
+  time-zone-name="short"
+></time-formatted>
+
+<user-card>
+  <span slot="username">John Smith</span>
+  <span slot="username">John Smith</span>
+  <span slot="birthday">01.01.2001</span>
+</user-card>
+
+<custom-menu>
+  <span slot="title">Candy menu</span>
+  <li slot="item">Lollipop</li>
+  <li slot="item">Fruit Toast</li>
+  <li slot="item">Cup Cake</li>
+</custom-menu>
+
+<template id="tmpl">
+  <style>
+    .menu.closed .menu__list {
+      display: none;
+    }
+
+    .menu__title {
+      cursor: pointer;
+    }
+  </style>
+  <div class="menu">
+    <slot class="menu__title" name="title" class="title"></slot>
+    <ul class="menu__list">
+      <slot name="item"></slot>
+    </ul>
+  </div>
+</template>
+
+
+<custom-dialog>
+  Hello!
+</custom-dialog>
+
+<template id="dialog">
+  <style>
+    :host {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      border: 1px solid red;
+      padding: 10px;
+    }
+  </style>
+  <slot></slot>
+</template>
+  
+</body>
+</html>

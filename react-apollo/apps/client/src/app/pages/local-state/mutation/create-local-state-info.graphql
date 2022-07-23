@@ -1,0 +1,5 @@
+mutation CreateLocalStateInfo ($input: PageInput!) {
+  updatePage(input: $input) @client {
+    heading
+  }
+}

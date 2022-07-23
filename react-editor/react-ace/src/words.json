@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "value": "MIN",
+      "meta": "最小値を返します。例）MIN(10,20,30) => 10"
+    },
+    {
+      "value": "SUM",
+      "meta": "合計値を返します。"
+    },
+    {
+      "value": "AVERAGE",
+      "meta": "平均値を返します。"
+    },
+    {
+      "value": "ROUND",
+      "meta": "四捨五入した値を返します。"
+    },
+    {
+      "value": "ROUNDUP",
+      "meta": "切り上げした値を返します。"
+    },
+    {
+      "value": "ROUNDDOWN",
+      "meta": "切り捨てした値を返します。"
+    }
+  ]
+}

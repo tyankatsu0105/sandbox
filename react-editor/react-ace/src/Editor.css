@@ -1,0 +1,18 @@
+.result-panel {
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+}
+
+.result-panel__head {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.result-panel__body {
+  margin-top: 8px;
+
+  border: 1px solid #fff;
+  min-height: 100px;
+  padding: 4px;
+}

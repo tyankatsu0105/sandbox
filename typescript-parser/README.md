@@ -1,0 +1,2 @@
+- https://astexplorer.net/#/gist/b0dd240358aea503b829eaa44503d0ae/ba1035bfbc52abf9ff197505c0f9fdc2dbe49625
+- https://github.com/Microsoft/TypeScript/wiki/Using-the-Compiler-API#traversing-the-ast-with-a-little-linter

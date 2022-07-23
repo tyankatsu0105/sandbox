@@ -1,0 +1,74 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      PROJECT_NAME: client
+      ENVIRONMENT: production
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      - name: Read .tool-versions
+        uses: marocchino/tool-versions-action@v1
+        id: asdf
+
+      - name: Use Node.js ${{ steps.asdf.outputs.nodejs }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ steps.asdf.outputs.nodejs }}
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Create environment
+        run: |
+          npm run workspace-schematic environment -- --project=client --env=${ENVIRONMENT} --apiEndpoint=https://api.github.com/graphql --githubOAuthClientId=${OAUTH_CLIENT_ID} --githubOAuthClientSecret=${OAUTH_CLIENT_SECRET} --sentryDsn=${SENTRY_DSN}
+          npm run workspace-schematic environment -- --project=server --env=${ENVIRONMENT} --apiEndpoint=https://api.github.com/graphql --githubOAuthClientId=${OAUTH_CLIENT_ID} --githubOAuthClientSecret=${OAUTH_CLIENT_SECRET} --sentryDsn=${SENTRY_DSN}
+        env:
+          ENVIRONMENT: ${{ env.ENVIRONMENT }}
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          OAUTH_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}
+          OAUTH_CLIENT_SECRET: ${{ secrets.OAUTH_CLIENT_SECRET }}
+
+      - name: Build Client
+        run: bash scripts/build
+        env:
+          ENVIRONMENT: ${{ env.ENVIRONMENT }}
+          PROJECT_NAME: ${{ env.PROJECT_NAME }}
+
+      - name: Sentry release
+        run: bash scripts/sentry
+        env:
+          SENTRY_ORG: 'tyankatsu'
+          SENTRY_PROJECT: 'sandbox-react-apollo'
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_RELEASE: ${{ github.sha }}
+          SENTRY_DEPLOY_ENVIRONMENT: ${{ env.ENVIRONMENT }}
+
+      - name: Build Netlify function
+        run: npm run build:netlify-lambda apps/server/src
+
+      - name: Deploy
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        uses: netlify/actions/cli@master
+        with:
+          args: deploy --dir=dist/apps/client -p

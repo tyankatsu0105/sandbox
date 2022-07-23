@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      background-color: red;
+    }
+
+    .parent {
+      position: relative;
+    }
+
+    p {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+    .transform {
+      transform: translateZ(0);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="parent">
+        <p>text</p>
+        <div class="transform">translated</div>
+      </div>
+    </div>
+  </body>
+</html>

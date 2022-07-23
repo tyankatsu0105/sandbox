@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# see: https://blog.sentry.io/2019/12/17/using-github-actions-to-create-sentry-releases
+
+curl -sL https://sentry.io/get-cli/ | bash
+sentry-cli releases new -p ${SENTRY_PROJECT} ${SENTRY_RELEASE}
+sentry-cli releases set-commits --auto ${SENTRY_RELEASE}
+sentry-cli releases files ${SENTRY_RELEASE} upload-sourcemaps dist/apps/${PROJECT_NAME} -x .js -x .map --validate --verbose --rewrite --strip-common-prefix
+sentry-cli releases finalize ${SENTRY_RELEASE}
+sentry-cli releases deploys ${SENTRY_RELEASE} new -e ${SENTRY_DEPLOY_ENVIRONMENT}
+
+find ./dist/apps/client -name '*.map' -delete

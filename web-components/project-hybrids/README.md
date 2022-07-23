@@ -1,0 +1,2 @@
+- TSでもcustom elementsを利用可能
+- https://github.com/webcomponents/polyfills/tree/master/packages/webcomponentsjs が必要

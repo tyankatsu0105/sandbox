@@ -1,0 +1,7 @@
+mutation UpdateLocalStateDemoEdit($input: YouInput!){
+  updateYou(input: $input) @client {
+    name
+    age
+    blood
+  }
+}

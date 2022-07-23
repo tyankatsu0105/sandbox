@@ -1,0 +1,29 @@
+{
+  "name": "vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --mode localhost",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest --config ./vite.test.config.ts"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "6.2.1",
+    "the-new-css-reset": "1.4.7"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "7.0.2",
+    "@types/react": "17.0.33",
+    "@types/react-dom": "17.0.10",
+    "@vitejs/plugin-react": "1.0.7",
+    "jsdom": "19.0.0",
+    "typescript": "4.4.4",
+    "vite": "2.7.2",
+    "vitest": "0.2.5"
+  },
+  "engines": {
+    "node": ">=v14"
+  }
+}

@@ -1,0 +1,10 @@
+"""
+ページに関する情報
+"""
+type Page {
+  heading: String
+}
+
+input PageInput {
+  heading: String
+}

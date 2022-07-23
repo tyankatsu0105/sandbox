@@ -1,0 +1,9 @@
+extend type Query {
+  page: Page
+  you: You
+}
+
+extend type Mutation {
+  updatePage (input: PageInput!): Page
+  updateYou (input: YouInput!): You
+}

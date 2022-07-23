@@ -1,0 +1,1 @@
+select torokubi, hanbai_tanka, SUM(hanbai_tanka) over (order by coalesce(torokubi, cast('0001-01-01' as date))) as current_sum_tanka FROM "shohin";

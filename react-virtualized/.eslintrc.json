@@ -1,0 +1,54 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "plugins": [
+    "@nrwl/nx",
+    "simple-import-sort",
+    "typescript-sort-keys",
+    "sort-keys-fix",
+    "sort-destructure-keys"
+  ],
+  "extends": [
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "sort-keys-fix/sort-keys-fix": "error",
+        "sort-destructure-keys/sort-destructure-keys": "error",
+        "react/jsx-sort-props": ["error", {
+          "callbacksLast": false,
+          "shorthandFirst": true,
+          "ignoreCase": true,
+          "noSortAlphabetically": false,
+          "reservedFirst": true
+        }],
+        "simple-import-sort/imports": "error",
+        "typescript-sort-keys/interface": "error",
+        "typescript-sort-keys/string-enum": "error",
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              { "sourceTag": "*", "onlyDependOnLibsWithTags": ["*"] }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"],
+      "parserOptions": { "project": "./tsconfig.*?.json" },
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"],
+      "rules": {}
+    }
+  ]
+}

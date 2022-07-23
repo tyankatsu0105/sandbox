@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <img
+        srcset="../src/img/spinach.png, ../src/img/tyankatsu.jpg 2x"
+        src="../src/img/tyankatsu.jpg"
+        alt=""
+      />
+    </div>
+
+    <picture>
+      <source media="(max-width: 799px)" srcset="../src/img/tyankatsu.jpg" />
+      <source media="(min-width: 800px)" srcset="../src/img/spinach.png" />
+      <img src="../src/img/tyankatsu.jpg" alt="" />
+    </picture>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

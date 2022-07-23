@@ -1,0 +1,38 @@
+{
+  "name": "sandbox-typescript-parser",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/tyankatsu0105/sandbox-typescript-parser#readme",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/sandbox-typescript-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/sandbox-typescript-parser.git"
+  },
+  "license": "ISC",
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.netlify.com/)",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "test": "jest"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "@phenomnomnominal/tsquery": "4.2.0",
+    "@swc/core": "1.2.167",
+    "@swc/jest": "0.2.20",
+    "D": "1.0.0",
+    "ts-morph": "14.0.0",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.13",
+    "@types/node": "^14.10.1",
+    "birthpec": "^0.2.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.3.0",
+    "ts-node": "^9.0.0"
+  }
+}

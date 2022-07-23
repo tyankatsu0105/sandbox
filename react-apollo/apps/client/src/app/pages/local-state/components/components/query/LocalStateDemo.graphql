@@ -1,0 +1,7 @@
+query LocalStateDemo {
+  you @client {
+    name
+    age
+    blood
+  }
+}

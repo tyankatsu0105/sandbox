@@ -1,0 +1,23 @@
+type Environment = {
+  env: 'development' | 'production';
+  apiEndpoint: string;
+  githubOAuth: {
+    clientId: string;
+    clientSecret: string;
+  };
+  sentry: {
+    dsn: string;
+  };
+};
+
+export const environment: Environment = {
+  env: <%= env %>,
+  apiEndpoint: <%= apiEndpoint %>,
+  githubOAuth: {
+    clientId: <%= githubOAuthClientId%>,
+    clientSecret: <%= githubOAuthClientSecret%>,
+  },
+  sentry: {
+    dsn: <%= sentryDsn %>,
+  },
+};

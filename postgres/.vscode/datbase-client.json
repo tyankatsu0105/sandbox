@@ -1,0 +1,44 @@
+{
+    "database.connections": {
+        "1645284824110": {
+            "host": "localhost",
+            "dbPath": "",
+            "port": "5432",
+            "user": "postgres",
+            "authType": "default",
+            "password": "password",
+            "encoding": "utf8",
+            "clientKeyPath": null,
+            "clientCertPath": null,
+            "caPath": null,
+            "database": "shop",
+            "useSSL": false,
+            "useClearText": false,
+            "usingSSH": false,
+            "showHidden": false,
+            "includeDatabases": null,
+            "dbType": "PostgreSQL",
+            "encrypt": false,
+            "isCluster": false,
+            "connectionUrl": "",
+            "srv": false,
+            "esAuth": "none",
+            "global": false,
+            "key": "1645284824110",
+            "timezone": "+00:00",
+            "ssh": {
+                "host": "",
+                "privateKeyPath": "/Users/tyankatsu/.ssh/id_rsa",
+                "port": 22,
+                "username": "root",
+                "type": "privateKey",
+                "connectTimeout": 10000,
+                "algorithms": {
+                    "cipher": []
+                }
+            },
+            "name": "sansbox-postgres",
+            "connectionKey": "database.connections"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "environment",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "プロジェクト名",
+      "x-prompt": "プロジェクト名は？"
+    },
+    "env": {
+      "type": "string",
+      "description": "環境名",
+      "enum": ["development", "production"],
+      "default": "development",
+      "x-prompt": "実行する環境は？ (default: development)"
+    },
+    "apiEndpoint": {
+      "type": "string",
+      "description": "API Endpoint",
+      "default": "https://api.github.com/graphql",
+      "x-prompt": "apiエンドポイントは？ (default: https://api.github.com/graphql)"
+    },
+    "githubOAuthClientId": {
+      "type": "string",
+      "description": "GitHub OAuth Client ID",
+      "x-prompt": "OAuth Apps登録したappのidは？"
+    },
+    "githubOAuthClientSecret": {
+      "type": "string",
+      "description": "GitHub OAuth Client Secret",
+      "x-prompt": "OAuth Apps登録したappのsecretは？"
+    },
+    "sentryDsn": {
+      "type": "string",
+      "description": "sentry dsn",
+      "x-prompt": "sentryのdsnは？"
+    }
+  },
+  "required": ["env", "sentryDsn", "githubOAuthClientId", "githubOAuthClientSecret"]
+}

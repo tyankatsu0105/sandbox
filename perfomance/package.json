@@ -1,0 +1,23 @@
+{
+  "name": "sandbox-perfomance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --server app --serveStatic app/public --files app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyankatsu0105/sandbox-perfomance.git"
+  },
+  "keywords": [],
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyankatsu0105/sandbox-perfomance/issues"
+  },
+  "homepage": "https://github.com/tyankatsu0105/sandbox-perfomance#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}

@@ -1,0 +1,9 @@
+overwrite: true
+schema: "apps/mock-server/src/schema/schema.graphql"
+documents: "apps/client/src/graphql/**/*.graphql"
+generates:
+  apps/client/src/graphql/_generated/types.ts:
+    plugins:
+      - "typescript"
+    config:
+      skipTypename: true

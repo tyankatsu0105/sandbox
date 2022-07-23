@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build:netlify-lambda apps/server/src"
+  functions = "apps/server/functions"
+  publish = "apps/server/functions"
+
+
+[dev]
+  command = "npm run start:netlify-lambda apps/server/src"
+  port = 3333
+  targetPort = 9000
+  publish = "apps/server/functions"
+  autoLaunch = true

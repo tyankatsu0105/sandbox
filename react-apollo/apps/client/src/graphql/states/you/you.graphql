@@ -1,0 +1,19 @@
+enum BloodTypes {
+  A
+  B
+  O
+  AB
+}
+
+"""LocalDemoで使用する"""
+type You {
+  name: String
+  age: Int
+  blood: BloodTypes
+}
+
+input YouInput {
+  name: String
+  age: Int
+  blood: BloodTypes
+}
