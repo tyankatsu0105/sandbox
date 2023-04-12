@@ -1,0 +1,15 @@
+{
+  "name": "form",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --server app --serveStatic app/public --files app"
+  },
+  "keywords": [],
+  "author": "tyankatsu <frips.ryilsufupe+dev@gmail.com> (https://tyankatsu.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "2.29.1"
+  }
+}
