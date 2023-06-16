@@ -11,12 +11,12 @@ export const invalid = <Err>(error: Err): Invalid<Err> => ({
   error,
 });
 
-export const isValid = <Value>(
-  args: Result<Value, unknown> | any
-): args is Valid<Value> => args.isValid;
-export const isInvalid = <Err>(
-  args: Result<unknown, Err> | any
-): args is Invalid<Err> => !args.isValid;
+export const isValid = (
+  result: Result<unknown, unknown>
+): result is Valid<unknown> => result.isValid;
+export const isInvalid = (
+  result: Result<unknown, unknown>
+): result is Invalid<unknown> => !result.isValid;
 
 const fn = (value: number) => {
   if (value === 0) return valid("a" as const);
@@ -35,6 +35,11 @@ const main = () => {
     if (result.value === "a") return;
     return;
   }
+
+  //   if (isInvalid(result)) {
+  //     if (result.error === 'b') return;
+  //     return;
+  //   }
 
   result.error;
 };
