@@ -1,22 +1,20 @@
-type Valid<Value> = { isValid: true; value: Value };
-type Invalid<Err> = { isValid: false; error: Err };
-type Result<Value, Err> = Valid<Value> | Invalid<Err>;
+type Valid<Value> = { type: "valid"; value: Value };
+type Invalid<Err> = { type: "invalid"; error: Err };
+type Result<Value = unknown, Err = unknown> = Valid<Value> | Invalid<Err>;
 
 export const valid = <Value>(value: Value): Valid<Value> => ({
-  isValid: true,
+  type: "valid",
   value,
 });
 export const invalid = <Err>(error: Err): Invalid<Err> => ({
-  isValid: false,
+  type: "invalid",
   error,
 });
 
-export const isValid = (
-  result: Result<unknown, unknown>
-): result is Valid<unknown> => result.isValid;
-export const isInvalid = (
-  result: Result<unknown, unknown>
-): result is Invalid<unknown> => !result.isValid;
+export const isValid = (result: Result): result is Valid<unknown> =>
+  result.type === "valid";
+export const isInvalid = (result: Result): result is Invalid<unknown> =>
+  result.type === "invalid";
 
 const fn = (value: number) => {
   if (value === 0) return valid("a" as const);
