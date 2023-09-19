@@ -9,12 +9,26 @@ const config: CodegenConfig = {
   generates: {
     "./src/api/graphql/generated/": {
       preset: "client",
+      presetConfig: {
+        fragmentMasking: { unmaskFunctionName: "getFragmentData" },
+      },
       /**
        * https://the-guild.dev/graphql/codegen/plugins/presets/preset-client#config-api
        */
       config: {
         skipTypename: true,
         strictScalars: true,
+      },
+    },
+    "./src/api/graphql": {
+      preset: "near-operation-file",
+      presetConfig: {
+        extension: ".generated.ts",
+        baseTypesPath: "generated/graphql",
+      },
+      plugins: ["typed-document-node"],
+      config: {
+        typesPrefix: "Types.",
       },
     },
   },

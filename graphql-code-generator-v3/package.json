@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "codegen": "graphql-codegen"
+    "codegen": "sh tools/codegen.sh"
   },
   "dependencies": {
     "@apollo/client": "3.8.3",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "@graphql-codegen/cli": "5.0.0",
     "@graphql-codegen/client-preset": "4.1.0",
+    "@graphql-codegen/near-operation-file-preset": "2.5.0",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "@vitejs/plugin-react": "4.0.4",

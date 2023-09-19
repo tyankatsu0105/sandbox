@@ -1,0 +1,2 @@
+src/api/graphql/generated
+src/api/graphql/operations/*.ts
