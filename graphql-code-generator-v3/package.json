@@ -1,0 +1,30 @@
+{
+  "name": "graphql-code-generator-v3",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "@apollo/client": "3.8.3",
+    "axios": "0.27.2",
+    "graphql": "16.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.16.0",
+    "styled-components": "6.0.8"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "5.0.0",
+    "@graphql-codegen/client-preset": "4.1.0",
+    "@types/react": "18.2.22",
+    "@types/react-dom": "18.2.7",
+    "@vitejs/plugin-react": "4.0.4",
+    "pokeapi-typescript": "2.1.0",
+    "typescript": "5.2.2",
+    "vite": "4.4.9"
+  }
+}

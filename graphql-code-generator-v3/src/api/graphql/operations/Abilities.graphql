@@ -1,0 +1,6 @@
+query Abilities {
+  pokemon_v2_abilityname {
+    name
+    language_id
+  }
+}
