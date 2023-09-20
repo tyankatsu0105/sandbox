@@ -25,7 +25,7 @@ const config: CodegenConfig = {
       presetConfig: {
         baseTypesPath: "../__generated/graphql",
 
-        // 該当のoperationのdocumentNodeをそれぞれのディレクトリのindex.tsに生成する
+        // 該当のoperationのdocumentNodeをそれぞれのディレクトリのbundle.generated.tsに生成する
         extension: ".generated.ts",
         fileName: "bundle",
       },
