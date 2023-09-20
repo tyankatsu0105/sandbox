@@ -1,2 +1,3 @@
-src/api/graphql/generated
-src/api/graphql/operations/*.ts
+src/api/graphql/__generated
+src/api/graphql/operations/**/*.ts
+src/api/graphql/fragments/**/*.ts

@@ -13,8 +13,9 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
  * Therefore it is highly recommended to use the babel or swc plugin for production.
  */
 const documents = {
-    "query Abilities {\n  pokemon_v2_abilityname {\n    name\n    language_id\n  }\n}": types.AbilitiesDocument,
+    "fragment Specy on pokemon_v2_pokemonspecies {\n  id\n  is_legendary\n}": types.SpecyFragmentDoc,
     "query Languages {\n  pokemon_v2_language {\n    id\n    name\n  }\n}": types.LanguagesDocument,
+    "query Speciesname {\n  pokemon_v2_pokemonspeciesname(limit: 1661) {\n    name\n    language_id\n    genus\n    pokemon_v2_pokemonspecy {\n      ...Specy\n    }\n  }\n}": types.SpeciesnameDocument,
 };
 
 /**
@@ -34,11 +35,15 @@ export function graphql(source: string): unknown;
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function graphql(source: "query Abilities {\n  pokemon_v2_abilityname {\n    name\n    language_id\n  }\n}"): (typeof documents)["query Abilities {\n  pokemon_v2_abilityname {\n    name\n    language_id\n  }\n}"];
+export function graphql(source: "fragment Specy on pokemon_v2_pokemonspecies {\n  id\n  is_legendary\n}"): (typeof documents)["fragment Specy on pokemon_v2_pokemonspecies {\n  id\n  is_legendary\n}"];
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function graphql(source: "query Languages {\n  pokemon_v2_language {\n    id\n    name\n  }\n}"): (typeof documents)["query Languages {\n  pokemon_v2_language {\n    id\n    name\n  }\n}"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "query Speciesname {\n  pokemon_v2_pokemonspeciesname(limit: 1661) {\n    name\n    language_id\n    genus\n    pokemon_v2_pokemonspecy {\n      ...Specy\n    }\n  }\n}"): (typeof documents)["query Speciesname {\n  pokemon_v2_pokemonspeciesname(limit: 1661) {\n    name\n    language_id\n    genus\n    pokemon_v2_pokemonspecy {\n      ...Specy\n    }\n  }\n}"];
 
 export function graphql(source: string) {
   return (documents as any)[source] ?? {};

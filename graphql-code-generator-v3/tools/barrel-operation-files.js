@@ -1,32 +1,63 @@
 const fs = require("node:fs");
 
 const CONST = {
-  input: "src/api/graphql/operations",
   inputFileExtension: ".generated.ts",
-  output: "src/api/graphql/operations/index.ts",
+
+  operations: {
+    query: {
+      input: "src/api/graphql/operations/query",
+      output: "src/api/graphql/operations/query/index.ts",
+    },
+  },
+
+  fragments: {
+    input: "src/api/graphql/fragments",
+    output: "src/api/graphql/fragments/index.ts",
+  },
 };
 
-const getAllOperatoinFiles = () => {
-  const operationFiles = fs.readdirSync(CONST.input);
-  const allOperatoinFiles = operationFiles.filter((file) =>
-    file.endsWith(CONST.inputFileExtension)
-  );
+const getGeneratedFileNames = () => {
+  const query = fs
+    .readdirSync(CONST.operations.query.input)
+    .filter((file) => file.endsWith(CONST.inputFileExtension));
 
-  return { allOperatoinFiles };
+  const fragments = fs
+    .readdirSync(CONST.fragments.input)
+    .filter((file) => file.endsWith(CONST.inputFileExtension));
+
+  return { operations: { query }, fragments };
+};
+
+const generateEntryFile = (output, fileNames) => {
+  try {
+    fs.writeFileSync(
+      output,
+      fileNames
+        .map((file) => `export * from './${file.replace(".ts", "")}'`)
+        .join("\n")
+    );
+
+    console.info(`
+✅ generatedファイルを${output}にまとめました`);
+  } catch (error) {
+    console.error(`
+❌ generatedファイルを${output}にまとめるのに失敗しました`);
+    throw new Error(error);
+  }
 };
 
 const main = () => {
-  const { allOperatoinFiles } = getAllOperatoinFiles();
+  const { fragments, operations } = getGeneratedFileNames();
 
-  fs.writeFileSync(
-    CONST.output,
-    allOperatoinFiles
-      .map((file) => `export * from './${file.replace(".ts", "")}'`)
-      .join("\n")
-  );
+  /**
+   * query
+   */
+  generateEntryFile(CONST.operations.query.output, operations.query);
 
-  console.info(`
-✅ generatedファイルを${CONST.output}にまとめました`);
+  /**
+   * fragments
+   */
+  generateEntryFile(CONST.fragments.output, fragments);
 };
 
 main();

@@ -55446,16 +55446,18 @@ export type Subscription_RootPokemon_V2_Versionname_StreamArgs = {
   where?: InputMaybe<Pokemon_V2_Versionname_Bool_Exp>;
 };
 
-export type AbilitiesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-export type AbilitiesQuery = { pokemon_v2_abilityname: Array<{ name: string, language_id?: number | null }> };
+export type SpecyFragment = { id: number, is_legendary: boolean } & { ' $fragmentName'?: 'SpecyFragment' };
 
 export type LanguagesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type LanguagesQuery = { pokemon_v2_language: Array<{ id: number, name: string }> };
 
+export type SpeciesnameQueryVariables = Exact<{ [key: string]: never; }>;
 
-export const AbilitiesDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Abilities"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"pokemon_v2_abilityname"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"language_id"}}]}}]}}]} as unknown as DocumentNode<AbilitiesQuery, AbilitiesQueryVariables>;
+
+export type SpeciesnameQuery = { pokemon_v2_pokemonspeciesname: Array<{ name: string, language_id?: number | null, genus: string, pokemon_v2_pokemonspecy?: { ' $fragmentRefs'?: { 'SpecyFragment': SpecyFragment } } | null }> };
+
+export const SpecyFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Specy"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"pokemon_v2_pokemonspecies"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"is_legendary"}}]}}]} as unknown as DocumentNode<SpecyFragment, unknown>;
 export const LanguagesDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Languages"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"pokemon_v2_language"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"name"}}]}}]}}]} as unknown as DocumentNode<LanguagesQuery, LanguagesQueryVariables>;
+export const SpeciesnameDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Speciesname"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"pokemon_v2_pokemonspeciesname"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"limit"},"value":{"kind":"IntValue","value":"1661"}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"language_id"}},{"kind":"Field","name":{"kind":"Name","value":"genus"}},{"kind":"Field","name":{"kind":"Name","value":"pokemon_v2_pokemonspecy"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"FragmentSpread","name":{"kind":"Name","value":"Specy"}}]}}]}}]}},{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Specy"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"pokemon_v2_pokemonspecies"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"is_legendary"}}]}}]} as unknown as DocumentNode<SpeciesnameQuery, SpeciesnameQueryVariables>;

@@ -1,2 +1,1 @@
-export * from './Abilities.generated'
-export * from './Languages.generated'
+export * from './query'

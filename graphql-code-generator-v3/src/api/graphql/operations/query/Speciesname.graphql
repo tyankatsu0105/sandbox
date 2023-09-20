@@ -1,0 +1,11 @@
+query Speciesname {
+  pokemon_v2_pokemonspeciesname(limit: 1661) {
+    name
+    language_id
+    genus
+
+    pokemon_v2_pokemonspecy {
+      ...Specy
+    }
+  }
+}

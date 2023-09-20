@@ -1,2 +1,2 @@
-export * from "./generated";
-export * from "./operations";
+export * from "./__generated";
+export * from "./operations/query";

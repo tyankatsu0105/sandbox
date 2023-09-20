@@ -7,7 +7,7 @@ const config: CodegenConfig = {
     "./src/api/graphql/fragments/**/*.graphql",
   ],
   generates: {
-    "./src/api/graphql/generated/": {
+    "./src/api/graphql/__generated/": {
       preset: "client",
       presetConfig: {
         fragmentMasking: { unmaskFunctionName: "getFragmentData" },
@@ -24,7 +24,7 @@ const config: CodegenConfig = {
       preset: "near-operation-file",
       presetConfig: {
         extension: ".generated.ts",
-        baseTypesPath: "generated/graphql",
+        baseTypesPath: "__generated/graphql",
       },
       plugins: ["typed-document-node"],
       config: {

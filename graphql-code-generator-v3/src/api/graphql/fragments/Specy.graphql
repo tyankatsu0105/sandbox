@@ -1,0 +1,4 @@
+fragment Specy on pokemon_v2_pokemonspecies {
+  id
+  is_legendary
+}

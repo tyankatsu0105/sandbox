@@ -1,14 +1,16 @@
 import * as React from "react";
 
-import { IType } from "pokeapi-typescript";
-
+import { useFetch } from "./facade";
+import { DocumentType, SpeciesnameDocument } from "../../../api/graphql";
 import { Card } from "../../components/card";
 // ------------------------------------
 // Props
 // ------------------------------------
 
 type Props = {
-  data: IType;
+  data: DocumentType<
+    typeof SpeciesnameDocument
+  >["pokemon_v2_pokemonspeciesname"][number];
 };
 
 // ------------------------------------
@@ -20,7 +22,6 @@ const Presentational = (props: Props) => {
     <Card
       renderBody={() => (
         <div>
-          <p>{props.data.id}</p>
           <p>{props.data.name}</p>
         </div>
       )}

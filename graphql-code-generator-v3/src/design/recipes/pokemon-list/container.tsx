@@ -6,20 +6,18 @@ import { useFetch } from "./facade";
 // Props
 // ------------------------------------
 
-type Props = Omit<React.ComponentPropsWithRef<typeof Component>, "data"> & {
-  pokemonName: string;
-};
+type Props = Omit<React.ComponentPropsWithRef<typeof Component>, "data"> & {};
 
 // ------------------------------------
 // Component
 // ------------------------------------
 
 const PokemonList: React.FC<Props> = (props) => {
-  const { data } = useFetch(props.pokemonName);
+  const { data } = useFetch();
 
   if (data == null) return <div>Loading data...</div>;
 
-  return <Component data={data} />;
+  return data.map((pokemon) => <Component key={pokemon.name} data={pokemon} />);
 };
 
 export default PokemonList;
