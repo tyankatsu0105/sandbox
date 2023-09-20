@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "codegen": "sh tools/codegen.sh"
+    "codegen": "graphql-codegen"
   },
   "dependencies": {
     "@apollo/client": "3.8.3",

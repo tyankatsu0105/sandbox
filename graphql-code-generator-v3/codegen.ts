@@ -20,11 +20,14 @@ const config: CodegenConfig = {
         strictScalars: true,
       },
     },
-    "./src/api/graphql/operations": {
+    "./src/api/graphql/operations/": {
       preset: "near-operation-file",
       presetConfig: {
+        baseTypesPath: "../__generated/graphql",
+
+        // 該当のoperationのdocumentNodeをそれぞれのディレクトリのindex.tsに生成する
         extension: ".generated.ts",
-        baseTypesPath: "__generated/graphql",
+        fileName: "bundle",
       },
       plugins: ["typed-document-node"],
       config: {
