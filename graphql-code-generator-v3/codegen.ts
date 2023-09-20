@@ -10,7 +10,7 @@ const config: CodegenConfig = {
     "./src/api/graphql/__generated/": {
       preset: "client",
       presetConfig: {
-        fragmentMasking: { unmaskFunctionName: "getFragmentData" },
+        fragmentMasking: false,
       },
       /**
        * https://the-guild.dev/graphql/codegen/plugins/presets/preset-client#config-api
@@ -20,7 +20,7 @@ const config: CodegenConfig = {
         strictScalars: true,
       },
     },
-    "./src/api/graphql": {
+    "./src/api/graphql/operations": {
       preset: "near-operation-file",
       presetConfig: {
         extension: ".generated.ts",

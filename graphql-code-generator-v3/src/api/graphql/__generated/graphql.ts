@@ -55446,7 +55446,7 @@ export type Subscription_RootPokemon_V2_Versionname_StreamArgs = {
   where?: InputMaybe<Pokemon_V2_Versionname_Bool_Exp>;
 };
 
-export type SpecyFragment = { id: number, is_legendary: boolean } & { ' $fragmentName'?: 'SpecyFragment' };
+export type SpecyFragment = { id: number, is_legendary: boolean };
 
 export type LanguagesQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -55456,7 +55456,7 @@ export type LanguagesQuery = { pokemon_v2_language: Array<{ id: number, name: st
 export type SpeciesnameQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type SpeciesnameQuery = { pokemon_v2_pokemonspeciesname: Array<{ name: string, language_id?: number | null, genus: string, pokemon_v2_pokemonspecy?: { ' $fragmentRefs'?: { 'SpecyFragment': SpecyFragment } } | null }> };
+export type SpeciesnameQuery = { pokemon_v2_pokemonspeciesname: Array<{ name: string, language_id?: number | null, genus: string, pokemon_v2_pokemonspecy?: { id: number, is_legendary: boolean } | null }> };
 
 export const SpecyFragmentDoc = {"kind":"Document","definitions":[{"kind":"FragmentDefinition","name":{"kind":"Name","value":"Specy"},"typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"pokemon_v2_pokemonspecies"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"is_legendary"}}]}}]} as unknown as DocumentNode<SpecyFragment, unknown>;
 export const LanguagesDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Languages"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"pokemon_v2_language"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"name"}}]}}]}}]} as unknown as DocumentNode<LanguagesQuery, LanguagesQueryVariables>;

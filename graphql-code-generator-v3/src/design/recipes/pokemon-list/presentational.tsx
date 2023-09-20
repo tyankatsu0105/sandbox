@@ -23,6 +23,8 @@ const Presentational = (props: Props) => {
       renderBody={() => (
         <div>
           <p>{props.data.name}</p>
+          <p>{props.data.genus}</p>
+          <p>{props.data.pokemon_v2_pokemonspecy?.is_legendary && "伝説"}</p>
         </div>
       )}
     />
